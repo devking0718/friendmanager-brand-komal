@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 1, 1, 24;
+  --background-end-rgb: 1, 1, 24;
+  --box-shadow: 0, 122, 255;
+  --header: 6, 17, 33
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 1, 1, 24;
+    --background-end-rgb: 1, 1, 24;
+  }
+}
+
+body {
+  color: white;
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.navbar {
+  background: rgb(var(--header));
+}
+
+.launch-btn {
+  background-color: rgb(var(--header));
+  border: 1.5px solid rgba(17, 153, 249, 0.5);
+  height: 44px;
+}
+
+.launch-btn:hover {
+  background-color: #23273a;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.second-section {
+  background-image: radial-gradient(circle, #005fc7 -30%, #010116 40%, #020218 50%);
+}
+
+.feature-section {
+  background: linear-gradient(180deg, #000A1F 0%, #00143C 100%);
+}
+
+.card {
+  background: radial-gradient(123.14% 44.41% at 77.00% 45.58%, rgba(17, 153, 250, 0.20) 0%, rgba(17, 153, 250, 0.00) 100%), radial-gradient(172.02% 136.06% at 4.78% 96.68%, rgba(1, 1, 24, 0.40) 0%, rgba(1, 1, 24, 0.00) 100%), #002F61;
+}
+
+img[alt="phone1"] {
+  border-radius: 50%;
+  box-shadow: 0 0 25px 0px #0369ff;
+}
